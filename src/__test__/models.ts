@@ -11,3 +11,6 @@ export const abacWithObjRuleModelStr = readFileSync(abacWithObjRuleExample).toSt
 
 const rbacWithDomainsExample = 'src/__test__/examples/rbac_with_domains_model.conf';
 export const rbacWithDomainsModelStr= readFileSync(rbacWithDomainsExample).toString();
+
+const hierarchicalRbacExample = 'src/__test__/examples/hierarchical_rbac_model.conf';
+export const hierarchicalRbacModelStr= readFileSync(hierarchicalRbacExample).toString();

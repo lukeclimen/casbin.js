@@ -1,0 +1,16 @@
+p, alice, subscription1, subscription-reader
+p, alice, resource-group2, resource-group-owner
+p, alice, subscription3, subscription-owner
+g, subscription-reader, subscription-read
+g, subscription-owner, subscription-read
+g, subscription-owner, subscription-write
+g, resource-group-reader, resource-group-read
+g, resource-group-owner, resource-group-read
+g, resource-group-owner, resource-group-write
+g, subscription-reader, resource-group-reader
+g, subscription-owner, resource-group-owner
+g2, subscription1, resource-group1
+g2, subscription2, resource-group2
+g2, subscription3, resource-group3
+g2, subscription3, resource-group4
+g2, subscription1, resource-group5
