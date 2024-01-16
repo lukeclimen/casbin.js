@@ -97,8 +97,8 @@ export class Authorizer {
                 const pType = arr.shift()
                 if (pType == 'p'){
                     await this.enforcer.addPolicy(...arr);
-                } else if (pType == 'g'){
-                    await this.enforcer.addGroupingPolicy(...arr);
+                } else if (pType?.startsWith('g')){
+                    await this.enforcer.addNamedGroupingPolicy(pType, ...arr);
                 }
             }
         }
